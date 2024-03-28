@@ -4,8 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>login</title>
-<style type="text/css">
+<title>signup</title>
+</head>
+<body>
+	<style type="text/css">
 	body{
 		padding: 0;
 		margin: 0;
@@ -67,7 +69,7 @@
 	form>h1{
 		color: #383b3f;
 		position: relative;
-		left: 100px;
+		left: 70px;
 	}
 	
 	.right_div form>input {
@@ -80,8 +82,8 @@
 	
 	.outer_form .notUser{
 		position: relative;
-		top: 80px;
-		left: 200px;
+		top: 180px;
+		left: 230px;
 		color: #383b3f;
 	}
 	
@@ -110,33 +112,35 @@
 	
 	
 </style>
-</head>
-<body>
-	<jsp:include page="navbar.jsp"></jsp:include>
+</body>
+
+<jsp:include page="navbar.jsp"></jsp:include>
 	<div class="section">
 		<div class="inner_section">
 		<video autoplay="autoplay" loop="loop" muted="muted" src="images/animated-logo/Minimalist Logo for Hospital and Medical Health (1).mp4">		
 		</video>
 		<div class="right_div">
 			<div class="outer_form">
-				<form action="#">
-				<h1>Login</h1>
-				<input class="user_name" type="text" name="user_name" placeholder="Username/Email" autofocus="autofocus" required="required">
+				<form action="userRegister" method="post">
+				<h1>User Signup</h1>
+				<input class="user_name" type="text" name="user_name" placeholder="Username" autofocus="autofocus" required="required">
+				<input class="user_email" type="text" name="user_email" placeholder="Email" required="required">
 				<input class="password" type="password" name="pass" placeholder="Password" required="required">
+				<input class="password" type="password" name="passConfirm" placeholder="Confirm Password" required="required">
 			
 				<div class="btn">
-				<button class="loginbtn" type="submit">Login</button>
+				<button class="loginbtn" type="submit">Signup</button>
 				<button class="loginbtn" type="reset">Reset</button>
 				</div>
 				</form>
 				
 				<div class="notUser">
-				<label class="label1">Don't have an account?</label><a href="signup"><button class="loginbtn" type="submit">Signup</button></a>
+				<label class="label1">Already a user?</label><a href="login.jsp"><button class="loginbtn" type="submit">Login</button></a>
 				</div>
 			</div>
 		</div>
 		</div>
 	<jsp:include page="footer.jsp"></jsp:include>
 	</div>
-</body>
+
 </html>
