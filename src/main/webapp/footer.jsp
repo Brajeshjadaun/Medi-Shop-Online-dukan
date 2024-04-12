@@ -10,25 +10,28 @@
 	body {
 		padding: 0;
 		margin: 0;
-		height: 100vh;
-		width: 100vw;
 	}
 
 	.footer{
-		height: 100%;
-		width: 100%;
+		height: 90vh;
+		width: 100vw;
 		margin-top: 90px;
 		background-color: #eef4ff;
 		overflow: hidden;
 	}
 	
 	.footer .footer1{
-		height: 80%;
-		width: 98%;
+		height: 70%;
+		width: 100%;
 		padding: 10px;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: flex-start;
+	}
+	
+	.footer .footer1 .tag{
+		margin: 5%;
+		overflow: hidden;
 	}
 	
 	.footer h2{
@@ -51,8 +54,8 @@
 		box-shadow: 2px 2px 8px #52616b;
 	}
 	
-	.footer2{
-		height: 20%;
+	.footer .footer2{
+		height: 30%;
 		width: 100%;
 		display: flex;
 		flex-direction: row;
@@ -61,7 +64,7 @@
 	
 	.footer2 h2{
 		position: relative;
-		left: 45px;
+		left: 4%;
 	}
 	
 	.footer2 .image>img{
@@ -71,12 +74,12 @@
 	
 	.footer2 .image{
 		position: relative;
-		left: 50px;
+		left: 5%;
 	}
 	
 	.footer2 .copyright{
 		position: relative;
-		top: 90px;
+		top: 50%;
 	}
 </style>
 
@@ -85,21 +88,21 @@
 
 <div class="footer">
 			<div class="footer1">
-				<div class="company">
+				<div class="company tag">
 					<h2>Company</h2>
 					<h4><a>About Us</a></h4>
 					<h4><a>Careers</a></h4>
 					<h4><a>Blog</a></h4>
 					<h4><a>Partner with MediShop</a></h4>
 				</div>
-				<div class="help">
+				<div class="help tag">
 					<h2>Need Help</h2>
 					<h4><a>Browse all medicines</a></h4>
 					<h4><a>Browse all molecules</a></h4>
 					<h4><a>Browse all cities</a></h4>
 					<h4><a>Browse all stores</a></h4>
 				</div>
-				<div class="policy">
+				<div class="policy tag">
 					<h2>Policy Info</h2>
 					<h4><a>Editorial Policy</a></h4>
 					<h4><a>Privacy Policy</a></h4>
@@ -108,7 +111,7 @@
 					<h4><a>Customer Support Policy</a></h4>
 					<h4><a>Return Policy</a></h4>
 				</div>
-				<div class="followus">
+				<div class="followus tag">
 					<h2>Follow Us On</h2>
 					<div class="social">					
 						<h4><a><i class="fa-brands fa-instagram"></i></a></h4>

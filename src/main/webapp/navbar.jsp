@@ -26,19 +26,17 @@ body {
 	background-color: white;
 }
 
-.navbar .section {
-	max-width: 100%;
-	max-height: 100%;
-}
-
 .navbar .section1 {
 	height: 60%;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 
 .navbar .section2 {
 	height: 38.4%;
+	width: 100%;
 	border-bottom: 2px solid #e1e1e1;
 	border-top: 2px solid #e1e1e1;
 	background-color: white;
@@ -47,8 +45,8 @@ body {
 .navbar .section1 .logo {
 	height: 100%;
 	width: 12%;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 2%;
+	overflow: hidden;
 }
 
 .navbar .section1 img {
@@ -68,24 +66,21 @@ body {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	left: 15%;
+	left: 5%;
 	top: 15%;
-	height: 70%;
+	height: 50%;
 	width: 30%;
 	border-radius: 50px;
+	border: 2px solid #e1e1e1;
 	cursor: pointer;
 }
 
 .section1 .search_box>input {
 	height: 80%;
-	width: 100%;
+	width: 80%;
 	font-size: 25px;
 	border-radius: 50px;
 	border: none;
-	position: relative;
-	left: 1%;
-	cursor: pointer;
-	border: 2px solid #e1e1e1;
 	padding-left: 10px;
 }
 
@@ -99,10 +94,9 @@ body {
 }
 
 .section1 .search_box>a {
-	height: 83%;
+	height: 100%;
 	width: 20%;
 	position: absolute;
-	top: 4.8%;
 	left: 80.5%;
 	cursor: pointer;
 	border-radius: 50px;
@@ -115,8 +109,7 @@ body {
 .section1 .nav_buttons {
 	height: 100%;
 	width: 33.5%;
-	position: relative;
-	left: 20%;
+	
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -153,10 +146,15 @@ a:link:active, a:visited:active {
 	width: 50%;
 	position: relative;
 	top: 20%;
-	left: 23%; display : flex;
+	left: 23%; 
+	display : flex;
 	flex-direction: row;
-	display: flex; flex-direction : row;
 	justify-content: space-around;
+}
+
+.section2 .nav2_buttons .btn{
+	padding-left: 2%;
+	padding-right: 2%;
 }
 
 .section2 .nav2_buttons a:hover {
@@ -180,10 +178,10 @@ a:link:active, a:visited:active {
 
 			<div class="nav_buttons">
 				<div class="btn login_btn">
-					<a href="#"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+					<a href="loginUserOrVendorOrAdmin.jsp"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
 				</div>
 				<div class="btn signup_btn">
-					<a href="#"><i class="fa-solid fa-user-plus"></i> Signup</a>
+					<a href="signupUserOrVendorOrAdmin.jsp"><i class="fa-solid fa-user-plus"></i> Signup</a>
 				</div>
 				<div class="btn cart_btn">
 					<a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
@@ -193,7 +191,7 @@ a:link:active, a:visited:active {
 		<section class="section section2">
 			<div class="nav2_buttons">
 				<div class="btn home_btn">
-					<a href="#">Home</a>
+					<a href="index.jsp">Home</a>
 				</div>
 				<div class="btn shop_btn">
 					<a href="#">Shops</a>

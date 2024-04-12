@@ -4,8 +4,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>signup</title>
-	<style type="text/css">
+<title>loginVendor</title>
+<style type="text/css">
 	body{
 		padding: 0;
 		margin: 0;
@@ -19,7 +19,6 @@
 		top: 15.2%;
 	}
 	
-	
 	.section .inner_section{
 		height: 100%;
 		width: 100%;
@@ -32,7 +31,7 @@
 	.section .inner_section .left_div{
 		height: 100%;
 		width: 50%;
-		background-color: black;
+		background-color: #1daad8;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -47,7 +46,7 @@
 	.inner_section .right_div{
 		height: 100%;
 		width: 50%;
-		background-color: black;
+		background-color: #1daad8;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -57,8 +56,8 @@
 	.right_div .outer_form{
 		border: 2px solid #1daad8;
 		border-radius: 10px;
-		box-shadow: 5px 5px 8px grey;
-		background-color: #1daad8;
+		box-shadow: 5px 5px 8px black;
+		background-color: whitesmoke;
 		width: 80%;
 		height: 70%;
 		display: flex;
@@ -73,7 +72,6 @@
 		height: 50%;
 		display: flex;
 		flex-direction: column;
-	
 	}
 	
 	.right_div form .btn1{
@@ -109,7 +107,7 @@
 	
 	.outer_form .notUser{
 		position: relative;
-		top: 25%;
+		top: 20%;
 		color: #383b3f;
 	}
 	
@@ -135,30 +133,28 @@
 </style>
 </head>
 <body>
-<jsp:include page="navbar.jsp"></jsp:include>
+	<jsp:include page="navbar.jsp"></jsp:include>
 	<div class="section">
 		<div class="inner_section">
 		<div class="left_div">
-		<video autoplay="autoplay" loop="loop" muted="muted" src="images/animated-logo/Minimalist Logo for Hospital and Medical Health (1).mp4">		
+		<video autoplay="autoplay" loop="loop" muted="muted" src="images/animated-logo/Minimalist Logo for Hospital and Medical Health.mp4">		
 		</video>
 		</div>
 		<div class="right_div">
 			<div class="outer_form">
-				<form action="userRegister" method="post">
-				<h1>User Signup</h1>
-				<input class="user_name" type="text" name="user_name" placeholder="Username" autofocus="autofocus" required="required">
-				<input class="user_email" type="text" name="user_email" placeholder="Email" required="required">
+				<form action="#">
+				<h1>Vendor Login</h1>
+				<input class="user_name" type="text" name="vendor_name" placeholder="Vendorname/Email" autofocus="autofocus" required="required">
 				<input class="password" type="password" name="pass" placeholder="Password" required="required">
-				<input class="password" type="password" name="passConfirm" placeholder="Confirm Password" required="required">
 			
 				<div class="btn1">
-				<button class="loginbtn btn" type="submit">Signup</button>
+				<button class="loginbtn btn" type="submit">Login</button>
 				<button class="loginbtn btn" type="reset">Reset</button>
 				</div>
 				</form>
 				
 				<div class="notUser">
-				<label class="label1">Already a user?</label><a href="loginUserOrVendorOrAdmin.jsp"><button class="loginbtn" type="submit">Login</button></a>
+				<label class="label1">Don't have an account?</label><a href="signupUserOrVendorOrAdmin.jsp"><button class="loginbtn" type="submit">Signup</button></a>
 				</div>
 			</div>
 		</div>

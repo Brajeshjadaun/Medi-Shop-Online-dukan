@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>signup</title>
+<title>signupAdmin</title>
 	<style type="text/css">
 	body{
 		padding: 0;
@@ -144,10 +144,10 @@
 		</div>
 		<div class="right_div">
 			<div class="outer_form">
-				<form action="userRegister" method="post">
-				<h1>User Signup</h1>
-				<input class="user_name" type="text" name="user_name" placeholder="Username" autofocus="autofocus" required="required">
-				<input class="user_email" type="text" name="user_email" placeholder="Email" required="required">
+				<form action="adminRegister" method="post">
+				<h1>Admin Signup</h1>
+				<input class="user_name" type="text" name="admin_name" placeholder="Admin name" autofocus="autofocus" required="required">
+				<input class="user_email" type="text" name="admin_email" placeholder="Email" required="required">
 				<input class="password" type="password" name="pass" placeholder="Password" required="required">
 				<input class="password" type="password" name="passConfirm" placeholder="Confirm Password" required="required">
 			
@@ -158,7 +158,7 @@
 				</form>
 				
 				<div class="notUser">
-				<label class="label1">Already a user?</label><a href="loginUserOrVendorOrAdmin.jsp"><button class="loginbtn" type="submit">Login</button></a>
+				<label class="label1">Already a admin?</label><a href="loginUserOrVendorOrAdmin.jsp"><button class="loginbtn" type="submit">Login</button></a>
 				</div>
 			</div>
 		</div>

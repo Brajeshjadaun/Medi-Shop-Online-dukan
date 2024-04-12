@@ -178,6 +178,14 @@
 		color: #52616b;
 	}
 	
+	.accordian:hover{
+		background-color: #383b3f;
+	}
+	
+	.accordian>summary:hover{
+		color: white;
+	}
+	
 	.accordian>p{
 		position: relative;
 		left: 10px;

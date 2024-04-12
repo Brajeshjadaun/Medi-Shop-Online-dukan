@@ -4,8 +4,9 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>signup</title>
-	<style type="text/css">
+<title>loginUserVendorAdmin</title>
+<style type="text/css">
+
 	body{
 		padding: 0;
 		margin: 0;
@@ -32,7 +33,7 @@
 	.section .inner_section .left_div{
 		height: 100%;
 		width: 50%;
-		background-color: black;
+		background-color: #1daad8;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -47,7 +48,7 @@
 	.inner_section .right_div{
 		height: 100%;
 		width: 50%;
-		background-color: black;
+		background-color: #1daad8;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -57,8 +58,8 @@
 	.right_div .outer_form{
 		border: 2px solid #1daad8;
 		border-radius: 10px;
-		box-shadow: 5px 5px 8px grey;
-		background-color: #1daad8;
+		box-shadow: 5px 5px 8px black;
+		background-color: whitesmoke;
 		width: 80%;
 		height: 70%;
 		display: flex;
@@ -68,7 +69,7 @@
 		
 	}
 	
-	.right_div form{
+	.right_div .form{
 		width: 50%;
 		height: 50%;
 		display: flex;
@@ -76,40 +77,31 @@
 	
 	}
 	
-	.right_div form .btn1{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		position: relative;
-		top: 10%;
-	}
-	
-	.right_div form .btn{
+	.right_div .form .btn{
 		background: none;
 		border: none;
 		background-color: #e1e1e1;
 		cursor: pointer;
-		margin-bottom: 0;
+		margin-bottom: 10%;
+		font-size: 20px;
 		border-radius: 5px;
+		color: #383b3f;
+		padding: 2%;
+		width: 100%;
 	}
 	
-	form>h1{
+	.right_div .form .btn:hover{
+		background-color: #383b3f;
+		color: white;
+	}
+	
+	.form>h1{
 		color: #383b3f;
 		position: relative;
-		left: 20%;
-	}
-	
-	.right_div form>input {
-		position: relative;
-		margin-bottom: 30px;
-		border-radius: 5px;
-		font-size: 20px;
-		border: 2px solid #e1e1e1;
+		left: 30%;
 	}
 	
 	.outer_form .notUser{
-		position: relative;
-		top: 25%;
 		color: #383b3f;
 	}
 	
@@ -130,35 +122,27 @@
 		border-radius: 5px;
 		box-shadow: 5px 5px 8px grey;
 	}
-	
-	
 </style>
 </head>
 <body>
-<jsp:include page="navbar.jsp"></jsp:include>
+	<jsp:include page="navbar.jsp"></jsp:include>
 	<div class="section">
 		<div class="inner_section">
 		<div class="left_div">
-		<video autoplay="autoplay" loop="loop" muted="muted" src="images/animated-logo/Minimalist Logo for Hospital and Medical Health (1).mp4">		
+		<video autoplay="autoplay" loop="loop" muted="muted" src="images/animated-logo/Minimalist Logo for Hospital and Medical Health.mp4">		
 		</video>
 		</div>
 		<div class="right_div">
 			<div class="outer_form">
-				<form action="userRegister" method="post">
-				<h1>User Signup</h1>
-				<input class="user_name" type="text" name="user_name" placeholder="Username" autofocus="autofocus" required="required">
-				<input class="user_email" type="text" name="user_email" placeholder="Email" required="required">
-				<input class="password" type="password" name="pass" placeholder="Password" required="required">
-				<input class="password" type="password" name="passConfirm" placeholder="Confirm Password" required="required">
-			
-				<div class="btn1">
-				<button class="loginbtn btn" type="submit">Signup</button>
-				<button class="loginbtn btn" type="reset">Reset</button>
+				<div class="form">
+				<h1>Login</h1>
+					<a href="loginAdmin.jsp"><button class="btn">Admin Login</button></a>
+					<a href="loginVendor.jsp"><button class="btn">Vendor Login</button></a>
+					<a href="login.jsp"><button class="btn">User Login</button></a>
 				</div>
-				</form>
 				
 				<div class="notUser">
-				<label class="label1">Already a user?</label><a href="loginUserOrVendorOrAdmin.jsp"><button class="loginbtn" type="submit">Login</button></a>
+				<label class="label1">Don't have an account?</label><a href="signupUserOrVendorOrAdmin.jsp"><button class="loginbtn" type="submit">Signup</button></a>
 				</div>
 			</div>
 		</div>
